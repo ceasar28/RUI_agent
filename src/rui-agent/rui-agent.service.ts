@@ -239,7 +239,7 @@ Now, based on these rules, generate the post.
     const match = sentence.match(/^[\u4e00-\u9fa5\w]+/);
     return match ? match[0] : ''; // Return the first word or an empty string if no match
   }
-  @Cron('*/1 * * * *')
+  @Cron('*/10 * * * *')
   async handleCron(): Promise<void> {
     console.log('running cron');
     this.ruiAgentPost();
