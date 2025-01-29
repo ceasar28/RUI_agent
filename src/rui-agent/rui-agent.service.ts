@@ -30,6 +30,7 @@ export class RuiAgentService {
     });
 
     this.saveTopics();
+    this.ruiAgentPost();
   }
 
   private async saveTopics() {
