@@ -17,7 +17,9 @@ export class GoogleSheetService {
   async writeToSheet(data: any): Promise<any> {
     const authClient = await this.auth.getClient();
     const sheets = await google.sheets({ version: 'v4', auth: authClient });
-    const spreadsheetId = '1za-OX-kX0fIH347eB-OWHZAP--4_ictam5bsrklQptc';
+    const spreadsheetId = `1qoaaHduxN3kmTY31OH5-2ORUQRU7Z9H_uVqRgHtKvOM`;
+
+    // '1za-OX-kX0fIH347eB-OWHZAP--4_ictam5bsrklQptc';
     const range = 'Sheet1!A1';
     const valueInputOption = 'USER_ENTERED';
 

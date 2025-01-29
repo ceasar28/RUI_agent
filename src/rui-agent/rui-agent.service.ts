@@ -189,8 +189,8 @@ Now, based on these rules, generate the post.
 
       return allPosts
         .map((post) => [
-          { role: 'system', content: post.post },
           { role: 'user', content: post.prompt },
+          { role: 'assistant', content: post.post },
         ])
         .flat();
     } catch (error) {
